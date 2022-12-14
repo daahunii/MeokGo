@@ -9,7 +9,7 @@
 
     body, html {
       font-family: 'Source Sans Pro', sans-serif;
-      background-color: #1d243d;
+      background-color:antiquewhite;
       padding: 0;
       margin: 0;
     }
@@ -22,30 +22,32 @@
 
     .container{
       margin: 0;
-      top: 50px;
+      top: 120px;
       left: 50%;
       position: absolute;
       text-align: center;
       transform: translateX(-50%);
-      background-color: rgb( 33, 41, 66 );
+      background-color: rgb(255, 255, 255);
       border-radius: 9px;
-      border-top: 10px solid #79a6fe;
-      border-bottom: 10px solid #8BD17C;
+      border-top: 10px solid coral;
+      border-bottom: 10px solid #ff3737;
       width: 400px;
       height: 500px;
-      box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+      box-shadow: 5px 5px 30px 0px rgb(16, 16, 16);
     }
 
     .box h4 {
       font-family: 'Source Sans Pro', sans-serif;
-      color: #5c6bc0;
-      font-size: 18px;
-      margin-top:94px;;
+      color: coral;
+      font-size: 40pt;
+      margin-top:90px;;
+      margin-bottom: -10px;
     }
 
     .box h4 span {
-      color: #dfdeee;
-      font-weight: lighter;
+      color: #ff3737;
+      font-weight: 1000;
+      font-size: 40pt;
     }
 
     .box h5 {
@@ -53,20 +55,18 @@
       font-size: 13px;
       color: #a1a4ad;
       letter-spacing: 1.5px;
-      margin-top: -15px;
-      margin-bottom: 70px;
     }
 
     .box input[type = "text"],.box input[type = "password"] {
       display: block;
       margin: 20px auto;
-      background: #262e49;
-      border: 0;
+      background: #ffffff;
+      border: 1px solid #d2d2d2;
       border-radius: 5px;
       padding: 14px 10px;
       width: 320px;
       outline: none;
-      color: #d6d6d6;
+      color: rgb(119, 119, 122);
       -webkit-transition: all .2s ease-out;
       -moz-transition: all .2s ease-out;
       -ms-transition: all .2s ease-out;
@@ -75,16 +75,15 @@
 
     }
     ::-webkit-input-placeholder {
-      color: #565f79;
+      color: rgba(210, 210, 210, 0.83);
     }
 
     .box input[type = "text"]:focus,.box input[type = "password"]:focus {
-      border: 1px solid #79A6FE;
-
+      border: 1px solid rgba(255, 104, 47, 0.96);
     }
 
     a{
-      color: #5c7fda;
+      color: #ff7e1d;
       text-decoration: none;
     }
 
@@ -111,8 +110,8 @@
 
     .btn1 {
       border:0;
-      background: #7f5feb;
-      color: #dfdeee;
+      background: rgba(255, 70, 0, 0.96);
+      color: #fafafa;
       border-radius: 100px;
       width: 340px;
       height: 49px;
@@ -125,14 +124,14 @@
     }
 
     .btn1:hover {
-      background: #5d33e6;
+      background: rgba(255, 70, 0, 0.96);
     }
 
     .rmb {
       position: absolute;
-      margin-left: -24%;
+      margin-left: -37%;
       margin-top: 0px;
-      color: #dfdeee;
+      color: #ff7e1d;
       font-size: 13px;
     }
 
@@ -188,34 +187,60 @@
       display: none;
     }
 
-    .footer {
-      position: relative;
-      left: 0;
-      bottom: 0;
-      top: 605px;
-      width: 100%;
-      color: #78797d;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .footer .fa {
-      color: #7f5feb;;
-    }
-
-    Resources
-    /*img, label {display: inline-block;}*/
-    /*label {width: 130px}*/
-    /*button {background-color: blue; color: white; font-size: 15px}*/
   </style>
+  <script>
+    var pwd = document.getElementById('pwd');
+    var eye = document.getElementById('eye');
+
+    eye.addEventListener('click',togglePass);
+
+    function togglePass(){
+      eye.classList.toggle('active');
+
+      (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password';
+    }
+
+    // Form Validation
+
+    function checkStuff() {
+      var userid = document.form1.userid;
+      var password = document.form1.password;
+      var msg = document.getElementById('msg');
+
+      if (userid.value == "") {
+        msg.style.display = 'block';
+        msg.innerHTML = "Please enter your ID";
+        userid.focus();
+        return false;
+      } else {
+        msg.innerHTML = "";
+      }
+
+      if (password.value == "") {
+        msg.innerHTML = "Please enter your password";
+        password.focus();
+        return false;
+      } else {
+        msg.innerHTML = "";
+      }
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!re.test(userid.value)) {
+        msg.innerHTML = "Please enter a valid ID";
+        userid.focus();
+        return false;
+      } else {
+        msg.innerHTML = "";
+      }
+    }
+  </script>
 </head>
 <body id="particles-js"></body>
 <div class="animated bounceInDown">
   <div class="container">
     <span class="error animated tada" id="msg"></span>
     <form name="form1" class="box" method="post" action="loginOk">
-      <h4>Admin<span>Dashboard</span></h4>
-      <h5>Sign in to your account.</h5>
+      <h4>먹<span> GO</span></h4>
+      <h5>로그인 해주세요</h5>
       <input type="text" name="userid" placeholder="userid" autocomplete="off">
       <i class="typcn typcn-eye" id="eye"></i>
       <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
@@ -230,14 +255,4 @@
     <a href="#" class="dnthave">Don’t have an account? Sign up</a>
   </div>
 </div>
-<%--<body>--%>
-<%--<div style="width: 100%; text-align: center; padding-top: 100px">--%>
-<%--  <img src="../img/tree.jpg" height="250">--%>
-<%--  <form method="post" action="loginOk">--%>
-<%--    <div><label>User ID: </label><input type="text" name="userid" /></div>--%>
-<%--    <div><label>Password: </label><input type="password" name="password" /></div>--%>
-<%--    <button type="submit">login</button>--%>
-<%--  </form>--%>
-<%--</div>--%>
-<%--</body>--%>
 </html>

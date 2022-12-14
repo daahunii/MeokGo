@@ -12,23 +12,21 @@ public class BoardServiceImpl implements BoardService{
     BoardDAO boardDAO;
 
     @Override
-    public int insertBoard(BoardVO vo) {
-        return boardDAO.insertBoard(vo);
+    public int insertEat(BoardVO vo) {
+        return boardDAO.insertEat(vo);
     }
     @Override
-    public int deleteBoard(int id) {
-        return boardDAO.deleteBoard(id);
+    public int deleteEat(int id) {
+        return boardDAO.deleteEat(id);
     }
     @Override
-    public int updateBoard(BoardVO vo) {
-        return boardDAO.updateBoard(vo);
+    public int updateEat(BoardVO vo) {
+        return boardDAO.updateEat(vo);
     }
     @Override
-    public BoardVO getBoard(int seq) {
-        return boardDAO.getBoard(seq);
-    }
+    public BoardVO getEat(int seq) {return boardDAO.getEat(seq);}
     @Override
-    public List<BoardVO> getBoardList() {
-        return boardDAO.getBoardList();
+    public List<BoardVO> getEatList() {
+        return boardDAO.getEatList();
     }
 }
