@@ -62,6 +62,13 @@ public class BoardController {
         return "redirect:list";
     }
 
+    @RequestMapping(value = "/board/review/{id}", method = RequestMethod.GET)
+    public String reviewPost(@PathVariable("id") int id, Model model) {
+        BoardVO boardVO = boardService.getEat(id);
+        model.addAttribute("boardVO", boardVO);
+        return "review";
+    }
+
     @RequestMapping(value = "/board/deleteok/{id}", method = RequestMethod.GET)
     public String deletePostOk(@PathVariable("id") int id) {
         int i = boardService.deleteEat(id);
