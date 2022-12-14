@@ -11,7 +11,7 @@
 <body>
 
 <h1>게시물 수정</h1>
-<form:form modelAttribute="boardVO" enctype="multipart/form-data" method="POST" action="../editok">
+<form:form modelAttribute="boardVO" method="POST" action="../editok">
 	<form:hidden path="seq" />
 	<table id="edit">
 <%--		<tr><td>음식사진 : </td><td><img width="420" height="233" src="${pageContext.request.contextPath}/upload/${u.getPhoto()}"></td></tr>--%>
