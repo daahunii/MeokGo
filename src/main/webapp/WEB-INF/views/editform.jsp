@@ -98,7 +98,7 @@
 
 <footer class="text-muted">
 	<div class="container">
-		<p>HGU BR © JDH</p>
+		<p>HGU MeokGo © project</p>
 		<p>Book Review website</p>
 	</div>
 </footer>
