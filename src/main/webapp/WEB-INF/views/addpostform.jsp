@@ -42,7 +42,7 @@
         }
 
     </style>
-<title>Insert title here</title>
+<title>Add review page</title>
 </head>
 
 <body>
