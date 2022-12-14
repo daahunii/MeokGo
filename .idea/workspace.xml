@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd8f37b-c3fa-4203-aed9-a398a660230d" name="Changes" comment="firstcommit">
+    <list default="true" id="9dd8f37b-c3fa-4203-aed9-a398a660230d" name="Changes" comment="edit editform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671007059385</updated>
-      <workItem from="1671007060955" duration="19022000" />
+      <workItem from="1671007060955" duration="20070000" />
     </task>
     <task id="LOCAL-00001" summary="firstcommit">
       <created>1671038706666</created>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671038706666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="edit editform">
+      <created>1671040292023</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671040292023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firstcommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="firstcommit" />
+    <MESSAGE value="edit editform" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit editform" />
   </component>
 </project>

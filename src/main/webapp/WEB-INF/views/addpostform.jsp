@@ -63,21 +63,38 @@
     </div>
 </header>
 
-<h1>리뷰 추가하기</h1>
-<form action="addok" method="post" <%-- enctype="multipart/form-data" --%>>
-    <table id="edit">
-<%--        <tr><td>음식사진</td><td><input type="file" id="photo" name="photo"/></td></tr>--%>
-        <tr><td>카테고리</td><td><input type="text" name="category"/></td></tr>
-        <tr><td>음식이름</td><td><input type="text" name="fdname"/></td></tr>
-        <tr><td>음식가격</td><td><input type="number" name="price"/></td></tr>
-        <tr><td>별점</td><td><input type="number" name="star" placeholder="5점만점"></td></tr>
-        <tr><td>연락처</td><td><input type="text" name="tel"></td></tr>
-        <tr><td>작성자</td><td><input type="text" name="writer"/></td></tr>
-        <tr><td>내용</td><td><textarea cols="50" rows="5" name="review"></textarea></td></tr>
-    </table>
-    <button type="button" onclick="location.href='list'">목록보기</button>
-    <button type="submit">등록하기</button>
-</form>
+<h1 align="center" style="font-family: 'Noto Sans Khojki'; font-weight: bold">리뷰 추가하기</h1>
+<br>
+<div align="center" class="album py-5 bg-light">
+    <form action="addok" method="post" <%-- enctype="multipart/form-data" --%>>
+<%--        <label for="photo" class="form-label">책 표지:</label>--%>
+<%--        <input type="file" id="photo" name="photo"/>--%>
+<%--        <br />--%>
+        <label class="form-label">카테고리:</label>
+        <input type="text" id="category" name="category"/>
+        <br />
+        <label class="form-label">음식이름:</label>
+        <input type="text" id="fdname" name="fdname"/>
+        <br />
+        <label class="form-label">음식가격:</label>
+        <input type="text" id="price" name="price"/>
+        <br />
+        <label class="form-label">별점:</label>
+        <input type="number" id="star" name="star"/>
+        <br />
+        <label class="form-label">연락처:</label>
+        <input type="number" id="tel" name="tel"/>
+        <br />
+        <label class="form-label">작성자:</label>
+        <input type="text" id="writer" name="writer"/>
+        <br />
+        <label class="form-label">리뷰내용:</label>
+        <textarea cols="50" rows="5" id="review" name="review"></textarea>
+        <br />
+        <button type="submit" class="btn btn-primary" value="Add Post">추가</button>
+        <button type="button" class="btn btn-danger"><a href="posts.jsp" style="text-decoration: none; color: white;">취소</a></button>
+    </form>
+</div>
 
 <footer class="text-muted">
     <div class="container">
