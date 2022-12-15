@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd8f37b-c3fa-4203-aed9-a398a660230d" name="Changes" comment="edit footer">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/review.jsp" afterDir="false" />
+    <list default="true" id="9dd8f37b-c3fa-4203-aed9-a398a660230d" name="Changes" comment="edit posts, BoardController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/posts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/review.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/review.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671007059385</updated>
-      <workItem from="1671007060955" duration="23126000" />
+      <workItem from="1671007060955" duration="28963000" />
     </task>
     <task id="LOCAL-00001" summary="firstcommit">
       <created>1671038706666</created>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671042219868</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edit posts, BoardController">
+      <created>1671044447915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671044447915</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +235,7 @@
     <MESSAGE value="update addpostform" />
     <MESSAGE value="update addpostform, editform" />
     <MESSAGE value="edit footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit footer" />
+    <MESSAGE value="edit posts, BoardController" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit posts, BoardController" />
   </component>
 </project>

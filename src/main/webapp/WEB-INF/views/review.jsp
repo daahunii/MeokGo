@@ -3,6 +3,7 @@
 <%@page import="com.mycompany.myapp.board.BoardDAO, com.mycompany.myapp.board.BoardVO,java.util.*, java.io.File"%>
 <%@page import="com.oreilly.servlet.*" %>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
+<%@ page import="org.springframework.ui.Model" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
@@ -75,6 +76,10 @@
 <%--    request.setAttribute("u", u);--%>
 <%--%>--%>
 
+<%
+//    Model model = request.getAttribute("b")
+%>
+
 <br>
 <h1 align="center" id="br">Review</h1>
 <br>
@@ -83,19 +88,19 @@
 <%--    <c:if test="${u.getPhoto() ne ''}"><br /><img width="430" height="600" src="${pageContext.request.contextPath}/upload/${u.getPhoto()}"></c:if>--%>
 <%--    <br />--%>
     <br>
-    <label class="form-label"><span>- 카테고리 -</span> <p class="con"></p></label>
-<%--    <br />--%>
-<%--    <label class="form-label"><span>- 음식이름 -</span> <p class="con"><%=u.getFdname() %></p></label>--%>
-<%--    <br />--%>
-<%--    <label class="form-label"><span>- 음식가격 -</span> <p class="con"><%=u.getPrice() %></p></label>--%>
-<%--    <br />--%>
-<%--    <label class="form-label"><span>- 별점 -</span> <p class="con"><%=u.getStar() %></p></label>--%>
-<%--    <br />--%>
-<%--    <label class="form-label"><span>- 연락처 -</span> <p class="con"><%=u.getTel() %></p></label>--%>
-<%--    <br />--%>
-<%--    <label class="form-label"><span>- 작성자 -</span> <p class="con"><%=u.getWriter() %></p></label>--%>
-<%--    <br />--%>
-<%--    <label class="form-label"><span>- 리뷰 내용 -</span> <p class="con" style="width: 60%"><%=u.getReview() %></p></label>--%>
+    <label class="form-label"><span>- 카테고리 -</span> <p class="con">${boardVO.category}</p></label>
+    <br />
+    <label class="form-label"><span>- 음식이름 -</span> <p class="con">${boardVO.fdname}</p></label>
+    <br />
+    <label class="form-label"><span>- 음식가격 -</span> <p class="con">${boardVO.price}</p></label>
+    <br />
+    <label class="form-label"><span>- 별점 -</span> <p class="con">${boardVO.star}</p></label>
+    <br />
+    <label class="form-label"><span>- 연락처 -</span> <p class="con">${boardVO.tel}</p></label>
+    <br />
+    <label class="form-label"><span>- 작성자 -</span> <p class="con">${boardVO.writer}</p></label>
+    <br />
+    <label class="form-label"><span>- 리뷰 내용 -</span> <p class="con" style="width: 60%">${boardVO.review}</p></label>
     <br />
 </div>
 

@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 public class BoardController {
 
@@ -63,8 +65,16 @@ public class BoardController {
     }
 
     @RequestMapping(value = "/board/review/{id}", method = RequestMethod.GET)
-    public String reviewPost(@PathVariable("id") int id, Model model) {
+    public String reviewPost(@PathVariable("id") int id, HttpServletRequest request, Model model) {
         BoardVO boardVO = boardService.getEat(id);
+
+        boardVO.setCategory(request.getParameter("category"));
+        boardVO.setFdname(request.getParameter("fdname"));
+        boardVO.setPrice(Integer.parseInt(request.getParameter("price")));
+        boardVO.setStar(Integer.parseInt(request.getParameter("star")));
+        boardVO.setTel(request.getParameter("tel"));
+        boardVO.setWriter(request.getParameter("writer"));
+        boardVO.setReview(request.getParameter("review"));
         model.addAttribute("boardVO", boardVO);
         return "review";
     }
