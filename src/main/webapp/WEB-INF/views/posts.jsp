@@ -42,7 +42,6 @@
 		color: #ff7e1d;
 		text-shadow: 1px 3px 3px rgba(194, 54, 3, 0.96);
 	}
-
 </style>
 <script>
 	function delete_ok(id){
@@ -122,7 +121,7 @@
 							</p>
 							<p class="card-text" style="height: 30px; overflow: hidden;">${u.writer}</p>
 							<div class="d-flex justify-content-center align-items-center" style="margin-bottom: 30px;">
-								<button id="review" type="button" class="btn btn-outline-primary"><a href="review/${u.seq}" style="color: #001897; text-decoration: none; font-weight: 800;">Review</a></button>
+								<button type="button" class="btn btn-outline-primary"><a id="review" href="review/${u.seq}" style="color: #001897; text-decoration: none; font-weight: 800;">Review</a></button>
 							</div>
 							<div class="d-flex justify-content-between align-items-center">
 								<small class="text-muted">카테고리 - ${u.category}</small>

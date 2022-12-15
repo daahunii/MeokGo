@@ -3,6 +3,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <title>Login</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
@@ -10,6 +12,9 @@
     body, html {
       font-family: 'Source Sans Pro', sans-serif;
       background-color:antiquewhite;
+      background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-comida-com-ingredientes-para-massas_1220-3108.jpg?w=2000&t=st=1671113958~exp=1671114558~hmac=85828a87da1cd98af09e65833cc8f61252e7a5f1354bc33091be3751b533bfba");
+      background-repeat: no-repeat;
+      background-size: cover;
       padding: 0;
       margin: 0;
     }
@@ -18,6 +23,15 @@
       position: absolute;
       width: 100%;
       height: 100%;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .container{
@@ -33,7 +47,8 @@
       border-bottom: 10px solid #ff3737;
       width: 400px;
       height: 500px;
-      box-shadow: 5px 5px 30px 0px rgb(16, 16, 16);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+      animation: fadeInUp 2s;
     }
 
     .box h4 {
@@ -136,6 +151,7 @@
     }
 
     .forgetpass {
+      font-size: 13px;
       position: relative;
       float: right;
       right: 28px;
@@ -236,7 +252,7 @@
 </head>
 <body id="particles-js"></body>
 <div class="animated bounceInDown">
-  <div class="container">
+  <div id="ob" class="container">
     <span class="error animated tada" id="msg"></span>
     <form name="form1" class="box" method="post" action="loginOk">
       <h4>먹<span> GO</span></h4>
@@ -249,8 +265,8 @@
         <span></span>
         <small class="rmb">Remember me</small>
       </label>
-      <a href="#" class="forgetpass">Forget Password?</a>
-      <input type="submit" value="Sign in" class="btn1">
+      <a href="#" class="forgetpass">비밀번호를 잊으셨나요?</a>
+      <input type="submit" value="로그인" class="btn1">
     </form>
     <a href="#" class="dnthave">Don’t have an account? Sign up</a>
   </div>
