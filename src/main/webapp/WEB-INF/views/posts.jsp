@@ -143,40 +143,8 @@
 <footer class="text-muted">
 	<div class="container">
 		<p>HGU MeokGo © project</p>
-		<p>Book Review website</p>
+		<p>Food Review website service</p>
 	</div>
 </footer>
-<%--<h1>자유게시판</h1>--%>
-<%--<table id="list" width="90%">--%>
-<%--<tr>--%>
-<%--	<th>Id</th>--%>
-<%--	<th>카테고리</th>--%>
-<%--	<th>음식명</th>--%>
-<%--	<th>작성자</th>--%>
-<%--	<th>리뷰</th>--%>
-<%--	<th>별점</th>--%>
-<%--	<th>연락처</th>--%>
-<%--	<th>작성일</th>--%>
-<%--	<th>사진</th>--%>
-<%--	<th>Edit</th>--%>
-<%--	<th>Delete</th>--%>
-<%--</tr>--%>
-<%--<c:forEach items="${list}" var="u">--%>
-<%--	<tr>--%>
-<%--		<td>${u.seq}</td>--%>
-<%--		<td>${u.category}</td>--%>
-<%--		<td>${u.fdname}</td>--%>
-<%--		<td>${u.writer}</td>--%>
-<%--		<td>${u.review}</td>--%>
-<%--		<td>${u.star}</td>--%>
-<%--		<td>${u.tel}</td>--%>
-<%--		<td>${u.wdate}</td>--%>
-<%--		<td>${u.photo}</td>--%>
-<%--		<td><a href="editform/${u.seq}">글수정</a></td>--%>
-<%--		<td><a href="javascript:delete_ok('${u.seq}')">글삭제</a></td>--%>
-<%--	</tr>--%>
-<%--</c:forEach>--%>
-<%--</table>--%>
-<%--<br/><button type="button" onclick="location.href='add'">새글쓰기</button>--%>
 </body>
 </html>

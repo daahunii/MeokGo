@@ -107,7 +107,7 @@
 <footer class="text-muted">
     <div class="container">
         <p>HGU MeokGo © project</p>
-        <p>Book Review website</p>
+        <p>Food Review website service</p>
     </div>
 </footer>
 </body>

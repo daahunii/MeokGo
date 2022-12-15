@@ -65,16 +65,16 @@ public class BoardController {
     }
 
     @RequestMapping(value = "/board/review/{id}", method = RequestMethod.GET)
-    public String reviewPost(@PathVariable("id") int id, HttpServletRequest request, Model model) {
+    public String reviewPost(@PathVariable("id") int id, Model model) {
         BoardVO boardVO = boardService.getEat(id);
-
-        boardVO.setCategory(request.getParameter("category"));
-        boardVO.setFdname(request.getParameter("fdname"));
-        boardVO.setPrice(Integer.parseInt(request.getParameter("price")));
-        boardVO.setStar(Integer.parseInt(request.getParameter("star")));
-        boardVO.setTel(request.getParameter("tel"));
-        boardVO.setWriter(request.getParameter("writer"));
-        boardVO.setReview(request.getParameter("review"));
+        model.addAttribute("boardVO", boardVO);
+//        boardVO.setCategory(request.getParameter("category"));
+//        boardVO.setFdname(request.getParameter("fdname"));
+//        boardVO.setPrice(Integer.parseInt(request.getParameter("price")));
+//        boardVO.setStar(Integer.parseInt(request.getParameter("star")));
+//        boardVO.setTel(request.getParameter("tel"));
+//        boardVO.setWriter(request.getParameter("writer"));
+//        boardVO.setReview(request.getParameter("review"));
         model.addAttribute("boardVO", boardVO);
         return "review";
     }
