@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd8f37b-c3fa-4203-aed9-a398a660230d" name="Changes" comment="update footer">
+    <list default="true" id="9dd8f37b-c3fa-4203-aed9-a398a660230d" name="Changes" comment="update login, posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/posts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/dahun/IdeaProjects/MeokGo/src/main/java/com/mycompany/myapp/util"
+    "last_opened_file_path": "/Users/dahun/IdeaProjects/MeokGo/src/main/java/com/mycompany/myapp/util",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "25d39d92004e331b7b7a81faa19aaebc"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -169,6 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671007059385</updated>
       <workItem from="1671007060955" duration="34505000" />
+      <workItem from="1671120820491" duration="2185000" />
     </task>
     <task id="LOCAL-00001" summary="firstcommit">
       <created>1671038706666</created>
@@ -226,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671113000455</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update login, posts">
+      <created>1671121091769</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671121091769</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +264,7 @@
     <MESSAGE value="edit posts, BoardController" />
     <MESSAGE value="update controller, add review.jsp but not ok" />
     <MESSAGE value="update footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="update footer" />
+    <MESSAGE value="update login, posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="update login, posts" />
   </component>
 </project>
