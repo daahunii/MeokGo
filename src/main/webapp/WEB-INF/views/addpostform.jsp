@@ -66,10 +66,7 @@
 <h1 align="center" style="font-family: 'Noto Sans Khojki'; font-weight: bold">리뷰 추가하기</h1>
 <br>
 <div align="center" class="album py-5 bg-light">
-    <form action="addok" method="post" <%-- enctype="multipart/form-data" --%>>
-<%--        <label for="photo" class="form-label">책 표지:</label>--%>
-<%--        <input type="file" id="photo" name="photo"/>--%>
-<%--        <br />--%>
+    <form action="addok" method="post">
         <label class="form-label">카테고리:</label>
         <input type="text" id="category" name="category"/>
         <br />
