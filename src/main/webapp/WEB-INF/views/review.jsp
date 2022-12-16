@@ -67,26 +67,12 @@
             </button>
         </div>
     </div>
-</header
-
-<%--<%--%>
-<%--    BoardDAO boardDAO = new BoardDAO();--%>
-<%--    String id=request.getParameter("id");--%>
-<%--    BoardVO u = boardDAO.getEat(Integer.parseInt(id));--%>
-<%--    request.setAttribute("u", u);--%>
-<%--%>--%>
-
-<%
-//    Model model = request.getAttribute("b")
-%>
+</header>
 
 <br>
 <h1 align="center" id="br">Review</h1>
 <br>
 <div align="center" class="album py-5 bg-light">
-<%--    <input type="hidden" name="seq" value="<%=u.getSeq() %>"/>--%>
-<%--    <c:if test="${u.getPhoto() ne ''}"><br /><img width="430" height="600" src="${pageContext.request.contextPath}/upload/${u.getPhoto()}"></c:if>--%>
-<%--    <br />--%>
     <br>
     <label class="form-label"><span>- 카테고리 -</span> <p class="con">${boardVO.category}</p></label>
     <br />

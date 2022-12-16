@@ -163,7 +163,7 @@
       left: 24%;
     }
 
-    [type=checkbox]:checked + span:before {/* <-- style its checked state */
+    [type=checkbox]:checked + span:before {
       font-family: FontAwesome;
       font-size: 16px;
       content: "\f00c";
@@ -215,8 +215,6 @@
 
       (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password';
     }
-
-    // Form Validation
 
     function checkStuff() {
       var userid = document.form1.userid;

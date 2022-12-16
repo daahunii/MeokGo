@@ -83,7 +83,7 @@
 					</div>
 					<c:forEach items="${list}" var="u">
 						<div class="carousel-item">
-							<img class="d-block w-100" style="height: 600px" src="# <%--${pageContext.request.contextPath}/upload/${u.getPhoto()} --%>">
+							<img class="d-block w-100" style="height: 600px" src="#">
 						</div>
 					</c:forEach>
 				</div>
@@ -110,7 +110,7 @@
 			<c:forEach items="${list}" var="u" varStatus="status">
 				<div class="col">
 					<div class="card shadow-sm">
-						<img width="inherit" height="440px" src="# <%--${pageContext.request.contextPath}/upload/${u.getPhoto()} --%>">
+						<img width="inherit" height="440px" src="">
 						<div class="card-body">
 							<h5>${u.fdname}</h5>
 							<p>

@@ -37,15 +37,6 @@ public class BoardController {
             System.out.println("데이터 추가 성공!!!");
         return "redirect:list";
     }
-//    @RequestMapping(value = "/board/addok", method = RequestMethod.POST)
-//    public String multipart(BoardVO vo, MultipartHttpServletRequest req, MultipartFile file) {
-//        int i = boardService.insertEat(vo);
-//        if(i == 0)
-//            System.out.println("데이터 추가 실패 ");
-//        else
-//            System.out.println("데이터 추가 성공!!!");
-//        return "redirect:list";
-//    }
 
     @RequestMapping(value = "/board/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model) {
@@ -68,13 +59,6 @@ public class BoardController {
     public String reviewPost(@PathVariable("id") int id, Model model) {
         BoardVO boardVO = boardService.getEat(id);
         model.addAttribute("boardVO", boardVO);
-//        boardVO.setCategory(request.getParameter("category"));
-//        boardVO.setFdname(request.getParameter("fdname"));
-//        boardVO.setPrice(Integer.parseInt(request.getParameter("price")));
-//        boardVO.setStar(Integer.parseInt(request.getParameter("star")));
-//        boardVO.setTel(request.getParameter("tel"));
-//        boardVO.setWriter(request.getParameter("writer"));
-//        boardVO.setReview(request.getParameter("review"));
         model.addAttribute("boardVO", boardVO);
         return "review";
     }
