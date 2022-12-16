@@ -203,6 +203,27 @@
       display: none;
     }
 
+    @font-face {
+      font-family: 'OKDDUNG';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'PyeongChangPeace-Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    #meok{
+      font-family: 'PyeongChangPeace-Bold';
+    }
+
+    #go {
+      font-family: 'OKDDUNG';
+    }
   </style>
   <script>
     var pwd = document.getElementById('pwd');
@@ -253,7 +274,7 @@
   <div id="ob" class="container">
     <span class="error animated tada" id="msg"></span>
     <form name="form1" class="box" method="post" action="loginOk">
-      <h4>먹<span> GO</span></h4>
+      <h4 id="meok">먹 <span id="go">GO</span></h4>
       <h5>로그인 해주세요</h5>
       <input type="text" name="userid" placeholder="userid" autocomplete="off">
       <i class="typcn typcn-eye" id="eye"></i>
